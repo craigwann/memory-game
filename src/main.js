@@ -1,4 +1,4 @@
-import { cardMatch } from './memory-game';
+import { cardMatch, reset } from './memory-game';
 import './styles.css';
 
 
@@ -8,6 +8,10 @@ $(document).ready(function() {
   // flipCard(cardId);
   var cardName = $(this).attr('name');
   console.log(cardMatch(cardName, cardId));
+  });
+
+  $('#reset').click(function() {
+  reset();
   });
 
 });

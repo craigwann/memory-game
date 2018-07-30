@@ -43,4 +43,9 @@ export function cardMatch(name, id) {
 }
 
 
-   //do something
+export function reset() {
+  $(".col-md-3").removeClass("flip");
+  $(".col-md-3").removeClass("noClick");
+  $(".col-md-3").addClass("upright");
+  $(".col-md-3").children('p').hide();
+}
