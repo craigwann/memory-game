@@ -3,6 +3,8 @@
   min-height: 50px;
   border: 2px solid blue;
   margin-bottom: 10px;
+  font-size: 25px;
+  color: white;
 }
 
 .col-md-3 p{

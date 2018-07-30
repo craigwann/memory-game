@@ -7,7 +7,7 @@ $(document).ready(function() {
   var cardId = $(this).attr('id');
   // flipCard(cardId);
   var cardName = $(this).attr('name');
-  console.log(cardMatch(cardName, cardId));
+  cardMatch(cardName, cardId);
   });
 
   $('#reset').click(function() {
