@@ -16,3 +16,7 @@
 .flip{
   background-color: red;
 }
+
+.noClick {
+  pointer-events: none;
+}

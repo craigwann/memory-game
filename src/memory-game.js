@@ -13,6 +13,7 @@ export function cardMatch(name, id) {
   $("#" + id).toggleClass("upright");
   $("#" + id).toggleClass("flip");
   $("#" + id).children('p').toggle();
+  $("#" + id).addClass("noClick");
   showcards.push(name);
   showcards.push(id);
   }
@@ -21,17 +22,25 @@ export function cardMatch(name, id) {
     $("#" + id).toggleClass("upright");
     $("#" + id).toggleClass("flip");
     $("#" + id).children('p').toggle();
+    $("#" + id).addClass("noClick");
+    $("#" + showcards[1]).addClass("noClick");
     showcards =[];
-    $("#" + id).off("click");
-    $(showcards[1]).off("click");
   }
   else {
     $("#" + id).toggleClass("upright");
     $("#" + id).toggleClass("flip");
     $("#" + id).children('p').toggle();
-    $(showcards[1]).toggleClass("upright");
-    $(showcards[1]).toggleClass("flip");
-    $(showcards[1]).children('p').toggle();
+    $("#" + showcards[1]).toggleClass("upright", 1000);
+    $("#" + showcards[1]).toggleClass("flip", 1000);
+    $("#" + showcards[1]).children('p').toggle(1000);
+    $("#" + id).toggleClass("upright", 1000);
+    $("#" + id).toggleClass("flip", 1000);
+    $("#" + id).children('p').toggle(1000);
+    $("#" + showcards[1]).removeClass('noClick');
+    showcards =[];
   }
   return showcards;
 }
+
+
+   //do something
