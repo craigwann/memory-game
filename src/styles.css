@@ -1,0 +1,18 @@
+.col-md-3 {
+  text-align: center;
+  min-height: 50px;
+  border: 2px solid blue;
+  margin-bottom: 10px;
+}
+
+.col-md-3 p{
+ display: none;
+}
+
+.upright{
+  background-color: #7FDBFF;
+}
+
+.flip{
+  background-color: red;
+}
